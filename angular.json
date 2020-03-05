@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sonlit"
+    }
+  },
+  "defaultProject": "sonlit",
+  "cli": {
+    "analytics": false
+  }
 }
