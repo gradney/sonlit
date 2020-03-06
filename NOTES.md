@@ -7,6 +7,22 @@ NG-BOOK: The Complete Book on Angular 6
 Page:
 I'm going through this book to refresh my memory and actually build something productive. Wish me luck!
 
+DEFINITIONS
+---
+Components - teaching the browser new tags like <video> or <form> that have custom functionality attached to them. (From AngularJS, this use to be called 'directives'.) Includes two parts: 1) Decorator, 2) Definition.
+
+TERMS
+---
+__destructuring__ - a feature provided by ES6 and TypeScript...
+__decorating__ - adding metadata to our code to make it a decorated component.
+__multiline strings__ - a method using backticks (`...`) to add multi-line strings within a template section of @Component instead of using the referenced template (i.e. html).
+__style-encapsulation__ - styles specified for a particular component only apply to that component; note that multiple stylesheets can be loaded for a single componenet in its styleUrls section.
+
+COMMANDS
+---
+$ ng serve --port 9001  // if default port occupied (4200)
+$ ng generate component <comp-name>
+
 
 THOUGHTS
 ---
