@@ -17,6 +17,7 @@ __destructuring__ - a feature provided by ES6 and TypeScript...
 __decorating__ - adding metadata to our code to make it a decorated component.
 __multiline strings__ - a method using backticks (`...`) to add multi-line strings within a template section of @Component instead of using the referenced template (i.e. html).
 __style-encapsulation__ - styles specified for a particular component only apply to that component; note that multiple stylesheets can be loaded for a single componenet in its styleUrls section.
+__template tages__ - aka 'mustache tags, are the double curly braces used around a property name in a template for rendering its value.
 
 COMMANDS
 ---
