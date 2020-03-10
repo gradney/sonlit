@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user-item',
@@ -8,19 +8,21 @@ import { Component, OnInit } from '@angular/core';
 
 export class UserItemComponent implements OnInit {
 
-  // properties
-  firstName: string;
-  middleName: string;
-  lastName: string;
-  name: string;
+  @Input() username: string;
+
+  // // properties
+  // firstName: string;
+  // middleName: string;
+  // lastName: string;
+  // name: string;
 
   constructor() {
 
-    // default new username
-    this.firstName = 'John';
-    this.middleName = 'The';
-    this.lastName = 'Baptist';
-    this.name = this.firstName +' '+ this.lastName;
+    // // default new username
+    // this.firstName = 'John';
+    // this.middleName = 'The';
+    // this.lastName = 'Baptist';
+    // this.name = this.firstName +' '+ this.lastName;
   }
 
   ngOnInit(): void {
