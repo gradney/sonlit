@@ -3,10 +3,13 @@
   <h3 class="ui header">Add a Study Guide</h3>
   <div class="field">
     <label for="study_guide_title">Title:&nbsp;</label>
-    <input name="study_guide_title">
+    <input name="study_guide_title" #newtitle>
   </div>
   <div class="field">
     <label for="study_guide_link">Link:&nbsp;</label>
-    <input name="study_guide_link">
+    <input name="study_guide_link" #newlink>
   </div>
+  <button (click)="addStudyGuide(newtitle, newlink)" class="ui positive right floated button">
+    Submit
+  </button>
 </form>
