@@ -29,6 +29,9 @@ __declarations__ must declare components in a NgModule before can be used in tem
 __imports__ describes which _dependencies_ this module has.
 __providers__ used for _dependency injection_.
 __bootstrap__ when module is used, load the AppComponent as top-level component.
+__template variable__ a local variable on the template - used to bind input value to this input variable along with binding to this input element on the template; a '#' hash is used to symbolize the template variable and is called a __resolve__.
+__host__ the element (in template .html) this component (.ts) is attached to.
+__@HostBinding__ using this means we encapsulate the markup tag within our component. We don't have to both use an app-componentName tag AND require a class="row" in the markup of the parent view. By using the @HostBinding decorator, we're able to configure our host element from _within_ the component.
 
 COMMANDS
 ---
