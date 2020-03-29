@@ -16,5 +16,8 @@
 
 <!-- STUDY GUIDE list -->
 <div class="ui grid posts">
-  <app-study-guide></app-study-guide>
+  <app-study-guide
+    *ngFor="let studyGuide of studyGuides"
+    [studyGuide]="studyGuide">
+  </app-study-guide>
 </div>

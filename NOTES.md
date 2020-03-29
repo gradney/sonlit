@@ -1,7 +1,6 @@
 Why?
 I keep notes here because I can't remember everything. That's all. Eventually I'll move this into github's wiki section.
 
-
 NG-BOOK: The Complete Book on Angular 6
 ---
 Page:
@@ -9,6 +8,10 @@ I'm going through this book to refresh my memory and actually build something pr
 
 RESOURCES
 ---
+For coding conventions, using:
+* https://www.w3schools.com/js/js_conventions.asp
+
+For styling, using:
 * http://semantic-ui.com/
 * http://foundation.zurb.com
 * http://getbootstrap.com 
@@ -33,6 +36,9 @@ __template variable__ a local variable on the template - used to bind input valu
 __host__ the element (in template .html) this component (.ts) is attached to.
 __@HostBinding__ using this means we encapsulate the markup tag within our component. We don't have to both use an app-componentName tag AND require a class="row" in the markup of the parent view. By using the @HostBinding decorator, we're able to configure our host element from _within_ the component.
 __propagate__ by default, JavaScript transmits events to parents (due to event calls), and browser tries to follow the empty link which tells the browser to reload. Replace the default in function by stating a 'return false'.
+__Law of Demeter__ says that a given object should assume as little as possible about the structure or properties of other objects.
+__Fat Models, Skinny Controllers__ see http://weblog.jamisbuck.org/2006/10/18/skinny-controller-fat-model
+__array__ a collection that holds objects usually of a specific type.
 
 COMMANDS
 ---
@@ -56,6 +62,7 @@ Angular has a powerful concept of 'modules'. When we boot an Angular app, we are
 
 __@NgModule__ has 4 keys: 1) declarations, 2) imports, 3) providers, 4) bootstrap.
 
+__*ngFor="let box of boxes"__ will iterate through the list of boxes and create a local var box (for each item in the list). We are using the [inputName]="inputValue" expression to display in the template.
 
 THOUGHTS
 ---

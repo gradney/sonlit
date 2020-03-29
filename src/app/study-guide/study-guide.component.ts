@@ -1,4 +1,5 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, Input } from '@angular/core';
+import { StudyGuide } from './study-guide.model';
 
 @Component({
   selector: 'app-study-guide',
@@ -15,23 +16,25 @@ export class StudyGuideComponent implements OnInit {
   // automatically have the 'row' value added.
   @HostBinding('attr.class') cssClass='row';
   
-  votes: number;
-  title: string;
-  link: string;
+  @Input() studyGuide: StudyGuide;
 
   constructor() {
-    this.title = 'Angular 2';
-    this.link = 'http://angular.io';
-    this.votes = 10;
+    // study guide is populated by the Input now
   }
 
+  // Why have voteUp & voteDown here and in the Model class?
+  // The idea is that the voteUp() on the StudyGuideComponent
+  // relates to the component view, whereas the StudyGuide model voteUp()
+  // defines what mutations happen in the model (i.e. what data changes).
+  // Eventually we'll move most logic to model and minimize controller
+  // components work.
   voteUp(){
-    this.votes += 1;
+    this.studyGuide.voteUp();
     return false;
   }
 
   voteDown(){
-    this.votes -= 1;
+    this.studyGuide.voteDown();
     return false;
   }
 
