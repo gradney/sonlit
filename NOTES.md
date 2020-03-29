@@ -12,6 +12,8 @@ For coding conventions, using:
 * https://www.w3schools.com/js/js_conventions.asp
 
 For styling, using:
+* https://sass-lang.com/ - most popular
+* http://lesscss.org/
 * http://semantic-ui.com/
 * http://foundation.zurb.com
 * http://getbootstrap.com 
