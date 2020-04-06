@@ -12,6 +12,7 @@
     <a class="ui large header" href="{{ studyGuide.link }}">
         {{ studyGuide.title }}
     </a>
+    <div class="meta">({{ studyGuide.domain() }})</div>
     <ul class="ui big horizontal list voters">
         <li class="item">
             <a href (click)="voteUp()">

@@ -31,6 +31,9 @@ export class AppComponent {
 
   addStudyGuide(title: HTMLInputElement, link: HTMLInputElement): boolean {
     console.log(`Adding study guide titled: ${title.value} and linked: ${link.value}`);
+    this.studyGuides.push(new StudyGuide(title.value, link.value, 0));
+    title.value = '';
+    link.value = '';
     return false;
   }
 }
